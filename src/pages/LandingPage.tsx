@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Activity, BarChart2, ShieldCheck, Target, ChevronRight, Play, TrendingUp, Globe, Layers, ListChecks } from "lucide-react";
+import { Menu, X, Activity, BarChart2, ShieldCheck, Target, ChevronRight, Play, TrendingUp, Globe, Layers, ListChecks, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
@@ -491,9 +491,17 @@ export default function LandingPage() {
               <p className="text-muted-foreground mb-8 text-lg">
                 For enquiries, collaborations, or professional correspondence.
               </p>
-              <a href="mailto:hello@badrinath.com" className="text-2xl md:text-3xl font-serif font-bold text-primary hover:text-accent transition-colors block mb-12">
-                hello@badrinath.com
-              </a>
+              <div className="mb-12">
+                <a href="mailto:support@iteachtrading.com" className="inline-block">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 py-6 font-semibold text-lg shadow-xl hover:scale-105 transition-all inline-flex items-center gap-3 cursor-pointer"
+                  >
+                    <Mail className="w-5 h-5 text-accent" />
+                    <span>support@iteachtrading.com</span>
+                  </Button>
+                </a>
+              </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 {["YouTube", "Telegram", "Instagram"].map((platform) => (
